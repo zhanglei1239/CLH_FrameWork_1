@@ -1,0 +1,77 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import<AudioToolbox/AudioToolbox.h>
+#endif
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+#define SIMULATOR 1
+#elif TARGET_OS_IPHONE
+#define SIMULATOR 0
+#endif
+
+#define UI_NAVIGATION_BAR_HEIGHT           44
+#define UI_TOOL_BAR_HEIGHT                 44
+#define UI_TAB_BAR_HEIGHT                  49
+#define UI_STATUS_BAR_HEIGHT               20
+#define UI_SCREEN_WIDTH                    ([[UIScreen mainScreen] bounds].size.width)
+#define UI_SCREEN_HEIGHT                   ([[UIScreen mainScreen] bounds].size.height)
+#define UI_DeviceSystemVersion             [[UIDevice currentDevice].systemVersion intValue]
+
+#define iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6p ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define MAINCONTENT_VIEW_BACKGROUND_COLOR   [UIColor colorWithRed:246.0f/255.0f green:246.0f/255.0f blue:246.0f/255.0f alpha:1.0];
+
+#define Scale UI_SCREEN_WIDTH/320.0
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define TEXT_FONT_NAME                      @"HelveticaNeue"
+#define TEXT_COLOR                         [UIColor darkGrayColor];
+
+//正式
+#define _HTTP_SERVER                       @"http://common.culihui.com/api/fileManage/file/tempUpload"
+#define BOUNDARY                           @"cH2gL6ei4Ef1KM7cH2KM7ae0ei4gL6"
+
+//正式版ip
+//#define XMPP_SERVER_IP                     @"openfire.culihui.com"
+//#define XMPP_SERVER_PORT                   10001
+
+//开发版 外部
+#define XMPP_SERVER_IP                     @"dev.culihui.com"
+#define XMPP_SERVER_PORT                   6001
+
+//测试版 外部
+//#define XMPP_SERVER_IP                     @"test.culihui.com"
+//#define XMPP_SERVER_PORT                   10001
+
+#define CurrentSelectCity @"currentSelectCity"
+#define LastSelectCities @"lastSelectCities"
+#define HotCities @"HotCities"
