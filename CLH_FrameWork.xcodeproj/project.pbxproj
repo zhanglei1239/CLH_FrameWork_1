@@ -27,6 +27,8 @@
 		042805EA1C433B3F00880D47 /* NetServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805E81C433B3F00880D47 /* NetServiceManager.m */; };
 		042805F21C433BA100880D47 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805EE1C433BA100880D47 /* Reachability.m */; };
 		042805F31C433BA100880D47 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805F11C433BA100880D47 /* Util.m */; };
+		042805F71C4389E000880D47 /* CaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805F61C4389E000880D47 /* CaptchaView.m */; };
+		042805FB1C438A8900880D47 /* CaptchaPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805FA1C438A8900880D47 /* CaptchaPopView.m */; };
 		043D70C51C3DEE2700CE0035 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70C41C3DEE2700CE0035 /* LocationViewController.m */; };
 		043D70CF1C3DEFDC00CE0035 /* FunctionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70C81C3DEFDC00CE0035 /* FunctionButton.m */; };
 		043D70D01C3DEFDC00CE0035 /* LocateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70CA1C3DEFDC00CE0035 /* LocateButton.m */; };
@@ -140,6 +142,10 @@
 		042805EF1C433BA100880D47 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		042805F01C433BA100880D47 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		042805F11C433BA100880D47 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		042805F51C4389E000880D47 /* CaptchaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptchaView.h; path = Utils/CaptchaView/CaptchaView.h; sourceTree = "<group>"; };
+		042805F61C4389E000880D47 /* CaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaptchaView.m; path = Utils/CaptchaView/CaptchaView.m; sourceTree = "<group>"; };
+		042805F91C438A8900880D47 /* CaptchaPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptchaPopView.h; path = Utils/CaptchaPopView/CaptchaPopView.h; sourceTree = "<group>"; };
+		042805FA1C438A8900880D47 /* CaptchaPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaptchaPopView.m; path = Utils/CaptchaPopView/CaptchaPopView.m; sourceTree = "<group>"; };
 		043D70C31C3DEE2700CE0035 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationViewController.h; path = FrameController/LocationViewController.h; sourceTree = "<group>"; };
 		043D70C41C3DEE2700CE0035 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = FrameController/LocationViewController.m; sourceTree = "<group>"; };
 		043D70C71C3DEFDC00CE0035 /* FunctionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionButton.h; sourceTree = "<group>"; };
@@ -402,6 +408,24 @@
 			path = Utils/Addition;
 			sourceTree = "<group>";
 		};
+		042805F41C4389CB00880D47 /* CaptchaView */ = {
+			isa = PBXGroup;
+			children = (
+				042805F51C4389E000880D47 /* CaptchaView.h */,
+				042805F61C4389E000880D47 /* CaptchaView.m */,
+			);
+			name = CaptchaView;
+			sourceTree = "<group>";
+		};
+		042805F81C438A6D00880D47 /* CaptchaPopView */ = {
+			isa = PBXGroup;
+			children = (
+				042805F91C438A8900880D47 /* CaptchaPopView.h */,
+				042805FA1C438A8900880D47 /* CaptchaPopView.m */,
+			);
+			name = CaptchaPopView;
+			sourceTree = "<group>";
+		};
 		043D70C61C3DEFDC00CE0035 /* UserdefineButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,6 +520,8 @@
 		04CB0EE91C3CEF4400D71769 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				042805F81C438A6D00880D47 /* CaptchaPopView */,
+				042805F41C4389CB00880D47 /* CaptchaView */,
 				042805EB1C433BA100880D47 /* Addition */,
 				042805E41C433B3F00880D47 /* NetWork */,
 				043D71051C3E32EC00CE0035 /* ChineseToString */,
@@ -796,6 +822,7 @@
 				043D70E91C3DF0DE00CE0035 /* MJRefreshHeaderView.m in Sources */,
 				0421BD481C3CEAB300BFA235 /* BaseTabBarViewController.m in Sources */,
 				0421BD4F1C3CEBD300BFA235 /* HomePageViewController.m in Sources */,
+				042805F71C4389E000880D47 /* CaptchaView.m in Sources */,
 				043D70FF1C3E0F2A00CE0035 /* FMDatabasePool.m in Sources */,
 				04CB0EF11C3CEF4F00D71769 /* ToastDisplay.m in Sources */,
 				043D70FD1C3E0F2A00CE0035 /* FMDatabase.m in Sources */,
@@ -812,6 +839,7 @@
 				043D70E61C3DF0DE00CE0035 /* MJRefreshBaseView.m in Sources */,
 				042805EA1C433B3F00880D47 /* NetServiceManager.m in Sources */,
 				0421BD0E1C3CE91300BFA235 /* main.m in Sources */,
+				042805FB1C438A8900880D47 /* CaptchaPopView.m in Sources */,
 				043D71001C3E0F2A00CE0035 /* FMDatabaseQueue.m in Sources */,
 				042805F31C433BA100880D47 /* Util.m in Sources */,
 			);

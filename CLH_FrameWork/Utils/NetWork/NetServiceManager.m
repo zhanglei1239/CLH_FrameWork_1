@@ -32,7 +32,7 @@ NetServiceManager * _shareServiceManager;
     self = [super init];
     if (self) {
         _httpSessionManager = [AFHTTPSessionManager manager];
-//        _httpSessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
+        _httpSessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
         _httpSessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     }
     return self;

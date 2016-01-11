@@ -13,6 +13,8 @@
 #import "Toast+UIView.h"
 #import "CustomURLCache.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "CaptchaPopView.h"
+#import "NetServiceManager.h"
 @interface HomePageViewController ()
 {
     LocateButton * btnLocate;
@@ -25,6 +27,10 @@
     UIButton * btnMsg;
     
     UIWebView * wView;
+    
+    CaptchaPopView * captchaPop;
+    UIButton * btnCover;
+    NSString * token;
 }
 @end
 
@@ -98,6 +104,10 @@
     NSURLRequest * request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://github.com/"]];
     [wView loadRequest:request];
     [self.view addSubview:wView];
+    
+    btnCover = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT)];
+    [self.view addSubview:btnCover];
+    btnCover.hidden = YES;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -115,7 +125,17 @@
 }
 
 -(void)searchInfo:(id)sender{
-
+//    NSDictionary * params = @{@"email": @"calvin.xiao@springside.io",@"password" : @"springside"};
+//    [[NetServiceManager sharedNetServiceManager] getPath:@"http://123.56.8.122:8080/api/accounts/login?" parameters:params success:^(id responseObject) {
+//        NSLog(@"success");
+//        NSError * error;
+//        NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:&error];
+//        NSLog(@"aaa:%@",data);
+//        token = [data objectForKey:@"token"];
+//        NSLog(@"token:%@",token);
+//    } failure:^(NSError *error) {
+//        NSLog(@"failure");
+//    }];
 }
 
 -(void)scanInfo:(id)sender{
@@ -128,7 +148,21 @@
 }
 
 -(void)showMsg:(id)sender{
-    
+//    NSDictionary * params = @{@"token": token};
+//    [[NetServiceManager sharedNetServiceManager] getPath:@"http://123.56.8.122:8080/api/books/3/request?" parameters:params success:^(id responseObject) {
+//        NSLog(@"success");
+//        NSError * error;
+//        NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:&error];
+//        NSLog(@"aaa:%@",data); 
+//    } failure:^(NSError *error) {
+//        
+//    }];
+    [btnCover setHidden:NO];
+    captchaPop = [[CaptchaPopView alloc] initWithFrame:CGRectMake(0, 0, UI_SCREEN_WIDTH-8, 100)];
+    captchaPop.delegate = self;
+    captchaPop.center = CGPointMake(UI_SCREEN_WIDTH/2, UI_SCREEN_HEIGHT/2);
+    [self.view addSubview:captchaPop];
+    [self.view bringSubviewToFront:captchaPop];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -159,4 +193,13 @@
     hud.labelText = @"Loading...";
 }
 
+-(void)CaptchaPopSuccess:(CaptchaPopView *)cPop{
+    [btnCover setHidden:YES];
+    [cPop removeFromSuperview];
+}
+
+-(void)CaptchaPopCancel:(CaptchaPopView *)cPop{
+    [btnCover setHidden:YES];
+    [cPop removeFromSuperview];
+}
 @end
