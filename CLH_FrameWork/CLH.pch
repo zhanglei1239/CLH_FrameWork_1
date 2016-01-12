@@ -75,3 +75,5 @@
 #define CurrentSelectCity @"currentSelectCity"
 #define LastSelectCities @"lastSelectCities"
 #define HotCities @"HotCities"
+#define InterfaceName @"interfaceName"
+#define InterfaceParam  @"interfaceParam"

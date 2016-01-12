@@ -347,6 +347,22 @@
     return @"";
 }
 
+-(NSDictionary *)returnInterfacePath:(NSString *)FunctionName{
+    NSString * plist = [[NSBundle mainBundle] pathForResource:@"Interface" ofType:@"plist"];
+    NSMutableDictionary * data = [[NSMutableDictionary alloc] initWithContentsOfFile:plist];
+    NSMutableDictionary * dic = [data objectForKey:FunctionName];
+    NSString * http = [self returnStringFormatData:dic key:@"HttpUrl"];
+    NSString * version = [self returnStringFormatData:dic key:@"Version"];
+    NSString * functionModel = [self returnStringFormatData:dic key:@"FunctionModel"];
+    NSString * function = [self returnStringFormatData:dic key:@"Function"];
+    NSString * path = [NSString stringWithFormat:@"%@/%@/%@/%@",http,version,functionModel,function];
+    NSArray * param = [dic objectForKey:@"param"];
+    NSMutableDictionary * result = [[NSMutableDictionary alloc] init];
+    [result setObject:path forKey:InterfaceName];
+    [result setObject:param forKey:InterfaceParam];
+    return result;
+}
+
 -(BOOL)detactIfLogin{
     //TODO 进行是否登录的检测
     return YES;

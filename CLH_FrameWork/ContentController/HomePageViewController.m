@@ -125,17 +125,20 @@
 }
 
 -(void)searchInfo:(id)sender{
-//    NSDictionary * params = @{@"email": @"calvin.xiao@springside.io",@"password" : @"springside"};
-//    [[NetServiceManager sharedNetServiceManager] getPath:@"http://123.56.8.122:8080/api/accounts/login?" parameters:params success:^(id responseObject) {
-//        NSLog(@"success");
-//        NSError * error;
-//        NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:&error];
-//        NSLog(@"aaa:%@",data);
-//        token = [data objectForKey:@"token"];
-//        NSLog(@"token:%@",token);
-//    } failure:^(NSError *error) {
-//        NSLog(@"failure");
-//    }];
+    NSDictionary * dic = [self returnInterfacePath:@"Login"];
+    NSString * path = [dic objectForKey:InterfaceName];
+    NSArray * param = [dic objectForKey:InterfaceParam]; 
+    NSDictionary * params = @{[param firstObject]: @"calvin.xiao@springside.io",[param lastObject] : @"springside"};
+    [[NetServiceManager sharedNetServiceManager] getPath:path parameters:params success:^(id responseObject) {
+        NSLog(@"success");
+        NSError * error;
+        NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:&error];
+        NSLog(@"aaa:%@",data);
+        token = [data objectForKey:@"token"];
+        NSLog(@"token:%@",token);
+    } failure:^(NSError *error) {
+        NSLog(@"failure");
+    }];
 }
 
 -(void)scanInfo:(id)sender{

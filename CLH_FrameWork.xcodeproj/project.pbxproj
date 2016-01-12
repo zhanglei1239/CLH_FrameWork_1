@@ -50,6 +50,7 @@
 		043D71041C3E0F6500CE0035 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043D71031C3E0F6500CE0035 /* libsqlite3.tbd */; };
 		043D710A1C3E32EC00CE0035 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D71071C3E32EC00CE0035 /* ChineseString.m */; };
 		043D710B1C3E32EC00CE0035 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 043D71081C3E32EC00CE0035 /* pinyin.c */; };
+		044FFD771C4484A300B7F2AA /* Interface.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044FFD761C4484A300B7F2AA /* Interface.plist */; };
 		046B65961C3F51720007F06B /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B65951C3F51720007F06B /* CityCell.m */; };
 		046B65981C3F55D60007F06B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B65971C3F55D60007F06B /* CoreLocation.framework */; };
 		046B659A1C3F564E0007F06B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B65991C3F564E0007F06B /* SystemConfiguration.framework */; };
@@ -187,6 +188,7 @@
 		043D71071C3E32EC00CE0035 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
 		043D71081C3E32EC00CE0035 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		043D71091C3E32EC00CE0035 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		044FFD761C4484A300B7F2AA /* Interface.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Interface.plist; sourceTree = "<group>"; };
 		046B65941C3F51720007F06B /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityCell.h; path = FrameController/CityCell.h; sourceTree = "<group>"; };
 		046B65951C3F51720007F06B /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityCell.m; path = FrameController/CityCell.m; sourceTree = "<group>"; };
 		046B65971C3F55D60007F06B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -314,6 +316,7 @@
 				0421BD1A1C3CE91300BFA235 /* LaunchScreen.storyboard */,
 				0421BD1D1C3CE91300BFA235 /* Info.plist */,
 				0421BD0C1C3CE91300BFA235 /* Supporting Files */,
+				044FFD761C4484A300B7F2AA /* Interface.plist */,
 			);
 			path = CLH_FrameWork;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 				04CB0F0A1C3CFC6800D71769 /* bottom_findnew_b@2x.png in Resources */,
 				043D70EB1C3DFB1500CE0035 /* top_back_02@2x.png in Resources */,
 				04CB0EFF1C3CF79100D71769 /* guide_3.png in Resources */,
+				044FFD771C4484A300B7F2AA /* Interface.plist in Resources */,
 				04CB0EFD1C3CF79100D71769 /* guide_1.png in Resources */,
 				048DA3B21C3FAF030066D45E /* line@2x.png in Resources */,
 				04CB0F0B1C3CFC6800D71769 /* bottom_findnew_r@2x.png in Resources */,

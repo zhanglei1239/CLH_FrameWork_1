@@ -173,6 +173,14 @@
  *  @return 结果字符串
  */
 -(NSString *)returnStringFormatData:(NSMutableDictionary *)dic key:(NSString *)key;
+/**
+ *  根据字典返回的数据 返回一个接口的路径
+ *
+ *  @param dic 字段数据
+ *
+ *  @return 接口路径
+ */
+-(NSDictionary *)returnInterfacePath:(NSString *)FunctionName;
 
 -(BOOL)detactIfLogin;
 

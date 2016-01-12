@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Login</key>
+	<dict>
+		<key>param</key>
+		<array>
+			<string>email</string>
+			<string>password</string>
+		</array>
+		<key>Function</key>
+		<string>login?</string>
+		<key>FunctionModel</key>
+		<string>accounts</string>
+		<key>Version</key>
+		<string>api</string>
+		<key>HttpUrl</key>
+		<string>http://123.56.8.122:8080</string>
+	</dict>
+</dict>
+</plist>

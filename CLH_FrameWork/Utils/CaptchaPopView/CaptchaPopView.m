@@ -76,11 +76,13 @@
 }
 
 -(void)confirm:(id)sender{
-    if ([self.utfInput.text isEqualToString:@""]) {
+    NSString * lowCaseInput = [self.utfInput.text lowercaseString];
+    NSString * lowCaseCaptcha = [self.captchaV.changeString lowercaseString];
+    if ([lowCaseInput isEqualToString:@""]) {
         [self makeToast:@"请输入图片验证码!" duration:1 position:@"center" image:nil withTextColor:[UIColor redColor] withValue:@""];
         return;
     }
-    else if(![self.utfInput.text isEqualToString:self.captchaV.changeString]){
+    else if(![lowCaseCaptcha isEqualToString:lowCaseInput]){
         [self makeToast:@"验证码输入错误!" duration:1 position:@"center" image:nil withTextColor:[UIColor redColor] withValue:@""];
         return;
     }else{
@@ -88,7 +90,6 @@
             [_delegate CaptchaPopSuccess:self];
         }
     }
-    
 }
 
 
