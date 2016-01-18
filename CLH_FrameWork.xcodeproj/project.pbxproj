@@ -15,13 +15,6 @@
 		0421BD1C1C3CE91300BFA235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421BD1A1C3CE91300BFA235 /* LaunchScreen.storyboard */; };
 		0421BD271C3CE91300BFA235 /* CLH_FrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD261C3CE91300BFA235 /* CLH_FrameWorkTests.m */; };
 		0421BD321C3CE91300BFA235 /* CLH_FrameWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD311C3CE91300BFA235 /* CLH_FrameWorkUITests.m */; };
-		0421BD451C3CEA7100BFA235 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD441C3CEA7100BFA235 /* BaseViewController.m */; };
-		0421BD481C3CEAB300BFA235 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD471C3CEAB300BFA235 /* BaseTabBarViewController.m */; };
-		0421BD4B1C3CEAF900BFA235 /* LoadingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD4A1C3CEAF900BFA235 /* LoadingPageViewController.m */; };
-		0421BD4F1C3CEBD300BFA235 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD4E1C3CEBD300BFA235 /* HomePageViewController.m */; };
-		0421BD521C3CEC2800BFA235 /* SecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD511C3CEC2800BFA235 /* SecondPageViewController.m */; };
-		0421BD551C3CEC3400BFA235 /* ThirdPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD541C3CEC3400BFA235 /* ThirdPageViewController.m */; };
-		0421BD581C3CEC4400BFA235 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421BD571C3CEC4400BFA235 /* MineViewController.m */; };
 		042805E31C4331FB00880D47 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043D70D71C3DF09000CE0035 /* BaiduMapAPI.framework */; };
 		042805E91C433B3F00880D47 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805E61C433B3F00880D47 /* CustomURLCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		042805EA1C433B3F00880D47 /* NetServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805E81C433B3F00880D47 /* NetServiceManager.m */; };
@@ -29,7 +22,6 @@
 		042805F31C433BA100880D47 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805F11C433BA100880D47 /* Util.m */; };
 		042805F71C4389E000880D47 /* CaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805F61C4389E000880D47 /* CaptchaView.m */; };
 		042805FB1C438A8900880D47 /* CaptchaPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042805FA1C438A8900880D47 /* CaptchaPopView.m */; };
-		043D70C51C3DEE2700CE0035 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70C41C3DEE2700CE0035 /* LocationViewController.m */; };
 		043D70CF1C3DEFDC00CE0035 /* FunctionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70C81C3DEFDC00CE0035 /* FunctionButton.m */; };
 		043D70D01C3DEFDC00CE0035 /* LocateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70CA1C3DEFDC00CE0035 /* LocateButton.m */; };
 		043D70D11C3DEFDC00CE0035 /* SelfDefineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D70CC1C3DEFDC00CE0035 /* SelfDefineButton.m */; };
@@ -51,12 +43,29 @@
 		043D710A1C3E32EC00CE0035 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D71071C3E32EC00CE0035 /* ChineseString.m */; };
 		043D710B1C3E32EC00CE0035 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 043D71081C3E32EC00CE0035 /* pinyin.c */; };
 		044FFD771C4484A300B7F2AA /* Interface.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044FFD761C4484A300B7F2AA /* Interface.plist */; };
-		046B65961C3F51720007F06B /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B65951C3F51720007F06B /* CityCell.m */; };
+		0456B47F1C4C79F50091A3FA /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B4691C4C79F50091A3FA /* HomePageViewController.m */; };
+		0456B4801C4C79F50091A3FA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B46B1C4C79F50091A3FA /* MineViewController.m */; };
+		0456B4811C4C79F50091A3FA /* SecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B46D1C4C79F50091A3FA /* SecondPageViewController.m */; };
+		0456B4821C4C79F50091A3FA /* ThirdPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B46F1C4C79F50091A3FA /* ThirdPageViewController.m */; };
+		0456B4831C4C79F50091A3FA /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B4721C4C79F50091A3FA /* BaseTabBarViewController.m */; };
+		0456B4841C4C79F50091A3FA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B4741C4C79F50091A3FA /* BaseViewController.m */; };
+		0456B4851C4C79F50091A3FA /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B4761C4C79F50091A3FA /* CityCell.m */; };
+		0456B4861C4C79F50091A3FA /* LoadingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B4781C4C79F50091A3FA /* LoadingPageViewController.m */; };
+		0456B4871C4C79F50091A3FA /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B47A1C4C79F50091A3FA /* LocationViewController.m */; };
+		0456B4881C4C79F50091A3FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B47C1C4C79F50091A3FA /* MainViewController.m */; };
+		0456B4891C4C79F50091A3FA /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B47E1C4C79F50091A3FA /* QRCodeScanViewController.m */; };
+		0456B48D1C4C7A740091A3FA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B48C1C4C7A740091A3FA /* LoginViewController.m */; };
+		0456B4901C4CAB950091A3FA /* AccountAndPasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B48F1C4CAB950091A3FA /* AccountAndPasswordInputView.m */; };
+		0456B4931C4CABAB0091A3FA /* LoginByThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B4921C4CABAB0091A3FA /* LoginByThirdView.m */; };
+		0456B4951C4CAE120091A3FA /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456B4941C4CAE120091A3FA /* 120.png */; };
+		0456B49A1C4CC8790091A3FA /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0456B4961C4CC8790091A3FA /* bg@2x.jpg */; };
+		0456B49B1C4CC8790091A3FA /* UMS_qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456B4971C4CC8790091A3FA /* UMS_qq_icon@2x.png */; };
+		0456B49C1C4CC8790091A3FA /* UMS_sina_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456B4981C4CC8790091A3FA /* UMS_sina_icon@2x.png */; };
+		0456B49D1C4CC8790091A3FA /* UMS_wechat_session_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456B4991C4CC8790091A3FA /* UMS_wechat_session_icon@2x.png */; };
 		046B65981C3F55D60007F06B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B65971C3F55D60007F06B /* CoreLocation.framework */; };
 		046B659A1C3F564E0007F06B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B65991C3F564E0007F06B /* SystemConfiguration.framework */; };
 		046B659C1C3F565D0007F06B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B659B1C3F565D0007F06B /* Security.framework */; };
 		046B659E1C3F56970007F06B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B659D1C3F56970007F06B /* libstdc++.tbd */; };
-		048DA39E1C3F9AF30066D45E /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DA39D1C3F9AF30066D45E /* QRCodeScanViewController.m */; };
 		048DA3A31C3F9E190066D45E /* img_msg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048DA39F1C3F9E190066D45E /* img_msg@2x.png */; };
 		048DA3A41C3F9E190066D45E /* img_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048DA3A01C3F9E190066D45E /* img_scan@2x.png */; };
 		048DA3A51C3F9E190066D45E /* img_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048DA3A11C3F9E190066D45E /* img_search@2x.png */; };
@@ -69,7 +78,6 @@
 		048DA3B31C3FAF030066D45E /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048DA3B11C3FAF030066D45E /* pick_bg@2x.png */; };
 		04CB0EF01C3CEF4F00D71769 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB0EED1C3CEF4F00D71769 /* Toast+UIView.m */; };
 		04CB0EF11C3CEF4F00D71769 /* ToastDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB0EEF1C3CEF4F00D71769 /* ToastDisplay.m */; };
-		04CB0EF41C3CF49200D71769 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB0EF31C3CF49200D71769 /* MainViewController.m */; };
 		04CB0EF81C3CF56200D71769 /* ClipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB0EF71C3CF56200D71769 /* ClipImageView.m */; };
 		04CB0EFD1C3CF79100D71769 /* guide_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CB0EFA1C3CF79100D71769 /* guide_1.png */; };
 		04CB0EFE1C3CF79100D71769 /* guide_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CB0EFB1C3CF79100D71769 /* guide_2.png */; };
@@ -119,20 +127,6 @@
 		0421BD2D1C3CE91300BFA235 /* CLH_FrameWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLH_FrameWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0421BD311C3CE91300BFA235 /* CLH_FrameWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLH_FrameWorkUITests.m; sourceTree = "<group>"; };
 		0421BD331C3CE91300BFA235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0421BD431C3CEA7100BFA235 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = FrameController/BaseViewController.h; sourceTree = "<group>"; };
-		0421BD441C3CEA7100BFA235 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = FrameController/BaseViewController.m; sourceTree = "<group>"; };
-		0421BD461C3CEAB300BFA235 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTabBarViewController.h; path = FrameController/BaseTabBarViewController.h; sourceTree = "<group>"; };
-		0421BD471C3CEAB300BFA235 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTabBarViewController.m; path = FrameController/BaseTabBarViewController.m; sourceTree = "<group>"; };
-		0421BD491C3CEAF900BFA235 /* LoadingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingPageViewController.h; path = FrameController/LoadingPageViewController.h; sourceTree = "<group>"; };
-		0421BD4A1C3CEAF900BFA235 /* LoadingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingPageViewController.m; path = FrameController/LoadingPageViewController.m; sourceTree = "<group>"; };
-		0421BD4D1C3CEBD300BFA235 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageViewController.h; path = ContentController/HomePageViewController.h; sourceTree = "<group>"; };
-		0421BD4E1C3CEBD300BFA235 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageViewController.m; path = ContentController/HomePageViewController.m; sourceTree = "<group>"; };
-		0421BD501C3CEC2800BFA235 /* SecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondPageViewController.h; path = ContentController/SecondPageViewController.h; sourceTree = "<group>"; };
-		0421BD511C3CEC2800BFA235 /* SecondPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondPageViewController.m; path = ContentController/SecondPageViewController.m; sourceTree = "<group>"; };
-		0421BD531C3CEC3400BFA235 /* ThirdPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdPageViewController.h; path = ContentController/ThirdPageViewController.h; sourceTree = "<group>"; };
-		0421BD541C3CEC3400BFA235 /* ThirdPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdPageViewController.m; path = ContentController/ThirdPageViewController.m; sourceTree = "<group>"; };
-		0421BD561C3CEC4400BFA235 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = ContentController/MineViewController.h; sourceTree = "<group>"; };
-		0421BD571C3CEC4400BFA235 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineViewController.m; path = ContentController/MineViewController.m; sourceTree = "<group>"; };
 		042805E51C433B3F00880D47 /* CustomURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomURLCache.h; sourceTree = "<group>"; };
 		042805E61C433B3F00880D47 /* CustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomURLCache.m; sourceTree = "<group>"; };
 		042805E71C433B3F00880D47 /* NetServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetServiceManager.h; sourceTree = "<group>"; };
@@ -147,8 +141,6 @@
 		042805F61C4389E000880D47 /* CaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaptchaView.m; path = Utils/CaptchaView/CaptchaView.m; sourceTree = "<group>"; };
 		042805F91C438A8900880D47 /* CaptchaPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptchaPopView.h; path = Utils/CaptchaPopView/CaptchaPopView.h; sourceTree = "<group>"; };
 		042805FA1C438A8900880D47 /* CaptchaPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaptchaPopView.m; path = Utils/CaptchaPopView/CaptchaPopView.m; sourceTree = "<group>"; };
-		043D70C31C3DEE2700CE0035 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationViewController.h; path = FrameController/LocationViewController.h; sourceTree = "<group>"; };
-		043D70C41C3DEE2700CE0035 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = FrameController/LocationViewController.m; sourceTree = "<group>"; };
 		043D70C71C3DEFDC00CE0035 /* FunctionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionButton.h; sourceTree = "<group>"; };
 		043D70C81C3DEFDC00CE0035 /* FunctionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionButton.m; sourceTree = "<group>"; };
 		043D70C91C3DEFDC00CE0035 /* LocateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocateButton.h; sourceTree = "<group>"; };
@@ -189,14 +181,43 @@
 		043D71081C3E32EC00CE0035 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		043D71091C3E32EC00CE0035 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		044FFD761C4484A300B7F2AA /* Interface.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Interface.plist; sourceTree = "<group>"; };
-		046B65941C3F51720007F06B /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityCell.h; path = FrameController/CityCell.h; sourceTree = "<group>"; };
-		046B65951C3F51720007F06B /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityCell.m; path = FrameController/CityCell.m; sourceTree = "<group>"; };
+		0456B4681C4C79F50091A3FA /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		0456B4691C4C79F50091A3FA /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		0456B46A1C4C79F50091A3FA /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		0456B46B1C4C79F50091A3FA /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		0456B46C1C4C79F50091A3FA /* SecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondPageViewController.h; sourceTree = "<group>"; };
+		0456B46D1C4C79F50091A3FA /* SecondPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondPageViewController.m; sourceTree = "<group>"; };
+		0456B46E1C4C79F50091A3FA /* ThirdPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPageViewController.h; sourceTree = "<group>"; };
+		0456B46F1C4C79F50091A3FA /* ThirdPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPageViewController.m; sourceTree = "<group>"; };
+		0456B4711C4C79F50091A3FA /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		0456B4721C4C79F50091A3FA /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		0456B4731C4C79F50091A3FA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0456B4741C4C79F50091A3FA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0456B4751C4C79F50091A3FA /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
+		0456B4761C4C79F50091A3FA /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		0456B4771C4C79F50091A3FA /* LoadingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingPageViewController.h; sourceTree = "<group>"; };
+		0456B4781C4C79F50091A3FA /* LoadingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingPageViewController.m; sourceTree = "<group>"; };
+		0456B4791C4C79F50091A3FA /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		0456B47A1C4C79F50091A3FA /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		0456B47B1C4C79F50091A3FA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0456B47C1C4C79F50091A3FA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0456B47D1C4C79F50091A3FA /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
+		0456B47E1C4C79F50091A3FA /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
+		0456B48B1C4C7A740091A3FA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0456B48C1C4C7A740091A3FA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0456B48E1C4CAB950091A3FA /* AccountAndPasswordInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountAndPasswordInputView.h; sourceTree = "<group>"; };
+		0456B48F1C4CAB950091A3FA /* AccountAndPasswordInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountAndPasswordInputView.m; sourceTree = "<group>"; };
+		0456B4911C4CABAB0091A3FA /* LoginByThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginByThirdView.h; sourceTree = "<group>"; };
+		0456B4921C4CABAB0091A3FA /* LoginByThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginByThirdView.m; sourceTree = "<group>"; };
+		0456B4941C4CAE120091A3FA /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = Resource/120.png; sourceTree = "<group>"; };
+		0456B4961C4CC8790091A3FA /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bg@2x.jpg"; path = "Resource/bg@2x.jpg"; sourceTree = "<group>"; };
+		0456B4971C4CC8790091A3FA /* UMS_qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UMS_qq_icon@2x.png"; path = "Resource/UMS_qq_icon@2x.png"; sourceTree = "<group>"; };
+		0456B4981C4CC8790091A3FA /* UMS_sina_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UMS_sina_icon@2x.png"; path = "Resource/UMS_sina_icon@2x.png"; sourceTree = "<group>"; };
+		0456B4991C4CC8790091A3FA /* UMS_wechat_session_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UMS_wechat_session_icon@2x.png"; path = "Resource/UMS_wechat_session_icon@2x.png"; sourceTree = "<group>"; };
 		046B65971C3F55D60007F06B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		046B65991C3F564E0007F06B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		046B659B1C3F565D0007F06B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		046B659D1C3F56970007F06B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		048DA39C1C3F9AF30066D45E /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeScanViewController.h; path = FrameController/QRCodeScanViewController.h; sourceTree = "<group>"; };
-		048DA39D1C3F9AF30066D45E /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeScanViewController.m; path = FrameController/QRCodeScanViewController.m; sourceTree = "<group>"; };
 		048DA39F1C3F9E190066D45E /* img_msg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_msg@2x.png"; path = "Resource/img_msg@2x.png"; sourceTree = "<group>"; };
 		048DA3A01C3F9E190066D45E /* img_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_scan@2x.png"; path = "Resource/img_scan@2x.png"; sourceTree = "<group>"; };
 		048DA3A11C3F9E190066D45E /* img_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_search@2x.png"; path = "Resource/img_search@2x.png"; sourceTree = "<group>"; };
@@ -213,8 +234,6 @@
 		04CB0EED1C3CEF4F00D71769 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		04CB0EEE1C3CEF4F00D71769 /* ToastDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastDisplay.h; sourceTree = "<group>"; };
 		04CB0EEF1C3CEF4F00D71769 /* ToastDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastDisplay.m; sourceTree = "<group>"; };
-		04CB0EF21C3CF49200D71769 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = FrameController/MainViewController.h; sourceTree = "<group>"; };
-		04CB0EF31C3CF49200D71769 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = FrameController/MainViewController.m; sourceTree = "<group>"; };
 		04CB0EF61C3CF56200D71769 /* ClipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipImageView.h; sourceTree = "<group>"; };
 		04CB0EF71C3CF56200D71769 /* ClipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipImageView.m; sourceTree = "<group>"; };
 		04CB0EFA1C3CF79100D71769 /* guide_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guide_1.png; path = Resource/guide_1.png; sourceTree = "<group>"; };
@@ -303,10 +322,9 @@
 		0421BD0B1C3CE91300BFA235 /* CLH_FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				0456B41E1C4C79BC0091A3FA /* Controller */,
 				04CB0EF91C3CF78600D71769 /* Resource */,
 				04CB0EE91C3CEF4400D71769 /* Utils */,
-				0421BD4C1C3CEBBB00BFA235 /* ContentController */,
-				0421BD3F1C3CE95000BFA235 /* FrameController */,
 				0421BD0F1C3CE91300BFA235 /* AppDelegate.h */,
 				0421BD101C3CE91300BFA235 /* AppDelegate.m */,
 				0421BD121C3CE91300BFA235 /* ViewController.h */,
@@ -347,42 +365,6 @@
 				0421BD331C3CE91300BFA235 /* Info.plist */,
 			);
 			path = CLH_FrameWorkUITests;
-			sourceTree = "<group>";
-		};
-		0421BD3F1C3CE95000BFA235 /* FrameController */ = {
-			isa = PBXGroup;
-			children = (
-				043D70C31C3DEE2700CE0035 /* LocationViewController.h */,
-				043D70C41C3DEE2700CE0035 /* LocationViewController.m */,
-				046B65941C3F51720007F06B /* CityCell.h */,
-				046B65951C3F51720007F06B /* CityCell.m */,
-				0421BD431C3CEA7100BFA235 /* BaseViewController.h */,
-				0421BD441C3CEA7100BFA235 /* BaseViewController.m */,
-				0421BD461C3CEAB300BFA235 /* BaseTabBarViewController.h */,
-				0421BD471C3CEAB300BFA235 /* BaseTabBarViewController.m */,
-				0421BD491C3CEAF900BFA235 /* LoadingPageViewController.h */,
-				0421BD4A1C3CEAF900BFA235 /* LoadingPageViewController.m */,
-				04CB0EF21C3CF49200D71769 /* MainViewController.h */,
-				04CB0EF31C3CF49200D71769 /* MainViewController.m */,
-				048DA39C1C3F9AF30066D45E /* QRCodeScanViewController.h */,
-				048DA39D1C3F9AF30066D45E /* QRCodeScanViewController.m */,
-			);
-			name = FrameController;
-			sourceTree = "<group>";
-		};
-		0421BD4C1C3CEBBB00BFA235 /* ContentController */ = {
-			isa = PBXGroup;
-			children = (
-				0421BD4D1C3CEBD300BFA235 /* HomePageViewController.h */,
-				0421BD4E1C3CEBD300BFA235 /* HomePageViewController.m */,
-				0421BD501C3CEC2800BFA235 /* SecondPageViewController.h */,
-				0421BD511C3CEC2800BFA235 /* SecondPageViewController.m */,
-				0421BD531C3CEC3400BFA235 /* ThirdPageViewController.h */,
-				0421BD541C3CEC3400BFA235 /* ThirdPageViewController.m */,
-				0421BD561C3CEC4400BFA235 /* MineViewController.h */,
-				0421BD571C3CEC4400BFA235 /* MineViewController.m */,
-			);
-			name = ContentController;
 			sourceTree = "<group>";
 		};
 		042805E41C433B3F00880D47 /* NetWork */ = {
@@ -520,6 +502,59 @@
 			path = Utils/ChineseToString;
 			sourceTree = "<group>";
 		};
+		0456B41E1C4C79BC0091A3FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0456B4671C4C79F50091A3FA /* ContentController */,
+				0456B4701C4C79F50091A3FA /* FrameController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0456B4671C4C79F50091A3FA /* ContentController */ = {
+			isa = PBXGroup;
+			children = (
+				0456B4681C4C79F50091A3FA /* HomePageViewController.h */,
+				0456B4691C4C79F50091A3FA /* HomePageViewController.m */,
+				0456B46A1C4C79F50091A3FA /* MineViewController.h */,
+				0456B46B1C4C79F50091A3FA /* MineViewController.m */,
+				0456B46C1C4C79F50091A3FA /* SecondPageViewController.h */,
+				0456B46D1C4C79F50091A3FA /* SecondPageViewController.m */,
+				0456B46E1C4C79F50091A3FA /* ThirdPageViewController.h */,
+				0456B46F1C4C79F50091A3FA /* ThirdPageViewController.m */,
+			);
+			name = ContentController;
+			path = Controller/ContentController;
+			sourceTree = "<group>";
+		};
+		0456B4701C4C79F50091A3FA /* FrameController */ = {
+			isa = PBXGroup;
+			children = (
+				0456B4711C4C79F50091A3FA /* BaseTabBarViewController.h */,
+				0456B4721C4C79F50091A3FA /* BaseTabBarViewController.m */,
+				0456B4731C4C79F50091A3FA /* BaseViewController.h */,
+				0456B4741C4C79F50091A3FA /* BaseViewController.m */,
+				0456B4751C4C79F50091A3FA /* CityCell.h */,
+				0456B4761C4C79F50091A3FA /* CityCell.m */,
+				0456B4771C4C79F50091A3FA /* LoadingPageViewController.h */,
+				0456B4781C4C79F50091A3FA /* LoadingPageViewController.m */,
+				0456B4791C4C79F50091A3FA /* LocationViewController.h */,
+				0456B47A1C4C79F50091A3FA /* LocationViewController.m */,
+				0456B47B1C4C79F50091A3FA /* MainViewController.h */,
+				0456B47C1C4C79F50091A3FA /* MainViewController.m */,
+				0456B47D1C4C79F50091A3FA /* QRCodeScanViewController.h */,
+				0456B47E1C4C79F50091A3FA /* QRCodeScanViewController.m */,
+				0456B48B1C4C7A740091A3FA /* LoginViewController.h */,
+				0456B48C1C4C7A740091A3FA /* LoginViewController.m */,
+				0456B48E1C4CAB950091A3FA /* AccountAndPasswordInputView.h */,
+				0456B48F1C4CAB950091A3FA /* AccountAndPasswordInputView.m */,
+				0456B4911C4CABAB0091A3FA /* LoginByThirdView.h */,
+				0456B4921C4CABAB0091A3FA /* LoginByThirdView.m */,
+			);
+			name = FrameController;
+			path = Controller/FrameController;
+			sourceTree = "<group>";
+		};
 		04CB0EE91C3CEF4400D71769 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +599,11 @@
 		04CB0EF91C3CF78600D71769 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0456B4961C4CC8790091A3FA /* bg@2x.jpg */,
+				0456B4971C4CC8790091A3FA /* UMS_qq_icon@2x.png */,
+				0456B4981C4CC8790091A3FA /* UMS_sina_icon@2x.png */,
+				0456B4991C4CC8790091A3FA /* UMS_wechat_session_icon@2x.png */,
+				0456B4941C4CAE120091A3FA /* 120.png */,
 				048DA3B01C3FAF030066D45E /* line@2x.png */,
 				048DA3B11C3FAF030066D45E /* pick_bg@2x.png */,
 				048DA39F1C3F9E190066D45E /* img_msg@2x.png */,
@@ -712,6 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043D70EF1C3E0E4B00CE0035 /* cities.db in Resources */,
+				0456B49B1C4CC8790091A3FA /* UMS_qq_icon@2x.png in Resources */,
 				04CB0F0F1C3CFC6800D71769 /* bottom_myculihui_r@2x.png in Resources */,
 				04CB0F091C3CFC6800D71769 /* bottom_category_r@2x.png in Resources */,
 				04CB0F0A1C3CFC6800D71769 /* bottom_findnew_b@2x.png in Resources */,
@@ -720,10 +761,13 @@
 				044FFD771C4484A300B7F2AA /* Interface.plist in Resources */,
 				04CB0EFD1C3CF79100D71769 /* guide_1.png in Resources */,
 				048DA3B21C3FAF030066D45E /* line@2x.png in Resources */,
+				0456B49D1C4CC8790091A3FA /* UMS_wechat_session_icon@2x.png in Resources */,
+				0456B49A1C4CC8790091A3FA /* bg@2x.jpg in Resources */,
 				04CB0F0B1C3CFC6800D71769 /* bottom_findnew_r@2x.png in Resources */,
 				04CB0EFE1C3CF79100D71769 /* guide_2.png in Resources */,
 				048DA3B31C3FAF030066D45E /* pick_bg@2x.png in Resources */,
 				048DA3A41C3F9E190066D45E /* img_scan@2x.png in Resources */,
+				0456B4951C4CAE120091A3FA /* 120.png in Resources */,
 				0421BD1C1C3CE91300BFA235 /* LaunchScreen.storyboard in Resources */,
 				043D70E51C3DF0DE00CE0035 /* MJRefresh.bundle in Resources */,
 				0421BD191C3CE91300BFA235 /* Assets.xcassets in Resources */,
@@ -733,6 +777,7 @@
 				04CB0F0E1C3CFC6800D71769 /* bottom_myculihui_b@2x.png in Resources */,
 				048DA3A31C3F9E190066D45E /* img_msg@2x.png in Resources */,
 				04CB0F0C1C3CFC6800D71769 /* bottom_homepage_b@2x.png in Resources */,
+				0456B49C1C4CC8790091A3FA /* UMS_sina_icon@2x.png in Resources */,
 				0421BD171C3CE91300BFA235 /* Main.storyboard in Resources */,
 				048DA3A51C3F9E190066D45E /* img_search@2x.png in Resources */,
 				04CB0F081C3CFC6800D71769 /* bottom_category_b@2x.png in Resources */,
@@ -809,42 +854,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				043D710B1C3E32EC00CE0035 /* pinyin.c in Sources */,
+				0456B4891C4C79F50091A3FA /* QRCodeScanViewController.m in Sources */,
+				0456B48D1C4C7A740091A3FA /* LoginViewController.m in Sources */,
+				0456B4881C4C79F50091A3FA /* MainViewController.m in Sources */,
+				0456B4861C4C79F50091A3FA /* LoadingPageViewController.m in Sources */,
 				043D70E81C3DF0DE00CE0035 /* MJRefreshFooterView.m in Sources */,
-				0421BD551C3CEC3400BFA235 /* ThirdPageViewController.m in Sources */,
 				043D71011C3E0F2A00CE0035 /* FMResultSet.m in Sources */,
+				0456B4821C4C79F50091A3FA /* ThirdPageViewController.m in Sources */,
 				042805E91C433B3F00880D47 /* CustomURLCache.m in Sources */,
+				0456B47F1C4C79F50091A3FA /* HomePageViewController.m in Sources */,
 				043D70D21C3DEFDC00CE0035 /* UploadPicButton.m in Sources */,
-				0421BD4B1C3CEAF900BFA235 /* LoadingPageViewController.m in Sources */,
 				043D70FE1C3E0F2A00CE0035 /* FMDatabaseAdditions.m in Sources */,
 				043D70D11C3DEFDC00CE0035 /* SelfDefineButton.m in Sources */,
+				0456B4801C4C79F50091A3FA /* MineViewController.m in Sources */,
 				04CB0EF81C3CF56200D71769 /* ClipImageView.m in Sources */,
 				0421BD141C3CE91300BFA235 /* ViewController.m in Sources */,
-				043D70C51C3DEE2700CE0035 /* LocationViewController.m in Sources */,
-				0421BD451C3CEA7100BFA235 /* BaseViewController.m in Sources */,
-				04CB0EF41C3CF49200D71769 /* MainViewController.m in Sources */,
 				043D70D01C3DEFDC00CE0035 /* LocateButton.m in Sources */,
+				0456B4841C4C79F50091A3FA /* BaseViewController.m in Sources */,
 				043D70E91C3DF0DE00CE0035 /* MJRefreshHeaderView.m in Sources */,
-				0421BD481C3CEAB300BFA235 /* BaseTabBarViewController.m in Sources */,
-				0421BD4F1C3CEBD300BFA235 /* HomePageViewController.m in Sources */,
 				042805F71C4389E000880D47 /* CaptchaView.m in Sources */,
+				0456B4851C4C79F50091A3FA /* CityCell.m in Sources */,
 				043D70FF1C3E0F2A00CE0035 /* FMDatabasePool.m in Sources */,
+				0456B4871C4C79F50091A3FA /* LocationViewController.m in Sources */,
+				0456B4811C4C79F50091A3FA /* SecondPageViewController.m in Sources */,
 				04CB0EF11C3CEF4F00D71769 /* ToastDisplay.m in Sources */,
 				043D70FD1C3E0F2A00CE0035 /* FMDatabase.m in Sources */,
 				04CB0EF01C3CEF4F00D71769 /* Toast+UIView.m in Sources */,
-				0421BD521C3CEC2800BFA235 /* SecondPageViewController.m in Sources */,
-				0421BD581C3CEC4400BFA235 /* MineViewController.m in Sources */,
 				042805F21C433BA100880D47 /* Reachability.m in Sources */,
-				048DA39E1C3F9AF30066D45E /* QRCodeScanViewController.m in Sources */,
 				043D70CF1C3DEFDC00CE0035 /* FunctionButton.m in Sources */,
 				043D70E71C3DF0DE00CE0035 /* MJRefreshConst.m in Sources */,
 				0421BD111C3CE91300BFA235 /* AppDelegate.m in Sources */,
 				043D710A1C3E32EC00CE0035 /* ChineseString.m in Sources */,
-				046B65961C3F51720007F06B /* CityCell.m in Sources */,
 				043D70E61C3DF0DE00CE0035 /* MJRefreshBaseView.m in Sources */,
 				042805EA1C433B3F00880D47 /* NetServiceManager.m in Sources */,
+				0456B4931C4CABAB0091A3FA /* LoginByThirdView.m in Sources */,
+				0456B4831C4C79F50091A3FA /* BaseTabBarViewController.m in Sources */,
 				0421BD0E1C3CE91300BFA235 /* main.m in Sources */,
 				042805FB1C438A8900880D47 /* CaptchaPopView.m in Sources */,
 				043D71001C3E0F2A00CE0035 /* FMDatabaseQueue.m in Sources */,
+				0456B4901C4CAB950091A3FA /* AccountAndPasswordInputView.m in Sources */,
 				042805F31C433BA100880D47 /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "CaptchaPopView.h"
 #import "NetServiceManager.h"
+#import "LoginViewController.h"
 @interface HomePageViewController ()
 {
     LocateButton * btnLocate;
@@ -160,12 +161,14 @@
 //    } failure:^(NSError *error) {
 //        
 //    }];
-    [btnCover setHidden:NO];
-    captchaPop = [[CaptchaPopView alloc] initWithFrame:CGRectMake(0, 0, UI_SCREEN_WIDTH-8, 100)];
-    captchaPop.delegate = self;
-    captchaPop.center = CGPointMake(UI_SCREEN_WIDTH/2, UI_SCREEN_HEIGHT/2);
-    [self.view addSubview:captchaPop];
-    [self.view bringSubviewToFront:captchaPop];
+//    [btnCover setHidden:NO];
+//    captchaPop = [[CaptchaPopView alloc] initWithFrame:CGRectMake(0, 0, UI_SCREEN_WIDTH-8, 100)];
+//    captchaPop.delegate = self;
+//    captchaPop.center = CGPointMake(UI_SCREEN_WIDTH/2, UI_SCREEN_HEIGHT/2);
+//    [self.view addSubview:captchaPop];
+//    [self.view bringSubviewToFront:captchaPop];
+    
+    [self.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

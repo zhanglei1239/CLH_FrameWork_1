@@ -1,3 +1,5 @@
 platform :ios,'7.0'
 pod 'AFNetworking','~>3.0'
 pod 'MBProgressHUD','~>0.9.1'
+pod 'SecureNSUserDefaults','~>1.0.0'
+pod 'Masonry','~>0.6.3'

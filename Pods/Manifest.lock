@@ -14,14 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - CocoaSecurity (1.2.4)
+  - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
+  - SecureNSUserDefaults (1.0.0):
+    - CocoaSecurity (~> 1.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 0.9.1)
+  - SecureNSUserDefaults (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SecureNSUserDefaults: 60a27d6e7fd2cad47448fef5dea22803e098433a
 
 COCOAPODS: 0.39.0
