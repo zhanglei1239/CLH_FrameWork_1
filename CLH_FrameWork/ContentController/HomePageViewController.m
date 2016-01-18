@@ -127,9 +127,9 @@
 -(void)searchInfo:(id)sender{
     NSDictionary * dic = [self returnInterfacePath:@"Login"];
     NSString * path = [dic objectForKey:InterfaceName];
-    NSArray * param = [dic objectForKey:InterfaceParam]; 
+    NSArray * param = [dic objectForKey:InterfaceParam];
     NSDictionary * params = @{[param firstObject]: @"calvin.xiao@springside.io",[param lastObject] : @"springside"};
-    [[NetServiceManager sharedNetServiceManager] getPath:path parameters:params success:^(id responseObject) {
+    [[NetServiceManager sharedNetServiceManager] postPath:path parameters:params success:^(id responseObject) {
         NSLog(@"success");
         NSError * error;
         NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:&error];
