@@ -10,12 +10,12 @@
 #import "HomePageViewController.h"
 #import "SecondPageViewController.h"
 #import "ThirdPageViewController.h"
-#import "MineViewController.h"
+#import "MyPersonCenterViewController.h"
 @interface MainViewController : BaseTabBarViewController
 {
     HomePageViewController * _home;
     SecondPageViewController * _second;
     ThirdPageViewController * _third;
-    MineViewController * _mine;
+    MyPersonCenterViewController * _mine;
 }
 @end

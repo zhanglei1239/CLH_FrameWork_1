@@ -8,7 +8,7 @@
 
 #define iconCenterY 100
 #import "LoginViewController.h"
-
+#import "RetrivePasswordViewController.h"
 @interface LoginViewController ()
 
 @end
@@ -21,8 +21,9 @@
     [self.topView setBackgroundColor:[UIColor clearColor]];
     
     content = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT)];
-    [content setBackgroundColor:[UIColor whiteColor]];
+    [content setBackgroundColor:[UIColor blackColor]];
     [content setContentSize:CGSizeMake(UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT)];
+    content.bounces = NO;
     [self.view addSubview:content];
     
     UIImageView * bg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, UI_SCREEN_WIDTH, UI_SCREEN_HEIGHT)];
@@ -124,6 +125,7 @@
         [view.utfPassword resignFirstResponder];
     }
     NSLog(@"accountForgetDelegate");
+    [self.navigationController pushViewController:[[RetrivePasswordViewController alloc] init] animated:YES];
 }
 
 -(void)accountRegistDelegate:(AccountAndPasswordInputView*)view{

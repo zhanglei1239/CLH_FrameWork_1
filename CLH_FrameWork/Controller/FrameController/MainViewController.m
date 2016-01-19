@@ -177,7 +177,7 @@ enum {
     [self unSelectedTapTabBarItems:_third.tabBarItem];
     [self selectedTapTabBarItems:_third.tabBarItem];
     
-    _mine = [[MineViewController alloc] init];
+    _mine = [[MyPersonCenterViewController alloc] init];
     
     selectedImg = [UIImage imageNamed:@"bottom_myculihui_r"];
     unSelectImg = [UIImage imageNamed:@"bottom_myculihui_b"];
